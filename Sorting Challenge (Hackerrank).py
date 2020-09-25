@@ -1,7 +1,7 @@
-s = "1qaz2wsx3edc4rfv5tgb6yhn7ujm8ik9ol0pQWERTYUIOPASDFGHJKLZXCVBNM"
+s = "Enter a alphanumeric string" input() 
 
-l = []
-m = []
+l = [] 
+u = []
 o = []
 e = []
 
@@ -11,7 +11,7 @@ for i in s:
 
 for j in s:
     if j >= 'A' and j <= 'Z':
-        m.append(j)
+        u.append(j)
 
 for k in s:
     if k.isdigit():
@@ -20,23 +20,14 @@ for k in s:
         if int(k)%2 == 0:
             e.append(k)
 
-
-
-
-
-m.sort()
 l.sort()
+u.sort()
 o.sort()
 e.sort()
 
-
 c = ''.join(l)
-d = ''.join(m)
+d = ''.join(u)
 f = ''.join(o)
 g = ''.join(e)
 
 print (c + d + f + g)
-
-
-
-
